@@ -27,10 +27,14 @@
   font-size: 4rem;
   font-weight: bold;
   font-family: 'Reem Kufi', sans-serif;
-  width: 100%;
   height: auto;
   margin: auto;
   text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .App-section-1-content {
+    font-size: 2rem;
+  }
 }
 .Typist {
   display: inline-block;
@@ -56,6 +60,7 @@
   padding: 30px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #App-section-4 {
@@ -68,7 +73,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.App-section-header{
+.App-section-header {
   font-family: 'Reem Kufi', sans-serif;
   width: 100%;
   text-align: right;
