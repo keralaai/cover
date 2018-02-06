@@ -19,18 +19,21 @@ class App extends Component {
           name: 'Ask',
           description:
             'Got any doubts concerning ML or Deep Learning. Ask us. We are more than happy to answer any of your questions. Maybe add in more stuff here to make it look nicer',
-          button: 'ASK',
+          button: 'Ask us',
+          link: 'https://keralaai.in'
         },
         {
           name: 'Trippledex',
           description: 'Repair of aneurysm of coronary vessel',
           button: 'Mauv',
+          link: 'https://keralaai.in'
         },
         {
           name: 'Andalax',
           description:
             'Insertion or replacement of single array rechargeable neurostimulator pulse generator',
           button: 'Red',
+          link: 'https://keralaai.in'
         },
       ],
       members: [
