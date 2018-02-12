@@ -46,7 +46,7 @@ class App extends Component {
           twitter: 'gopidotai',
           facebook: 'Gopikrishnan Sasikumar',
           photo:
-            '/photos/IMG_20171127_014318_652 - gopi krishnan.jpg',
+            '/photos/IMG_20171127_014318_652 - gopi krishnan-min.jpg',
         },
         {
           timestamp: '2018/01/15 6:03:19 PM GMT+5:30',
@@ -56,7 +56,7 @@ class App extends Component {
           twitter: 'niazangels',
           facebook: 'niazangels',
           photo:
-            '/photos/niazangels - Niyas Mohammed.jpg',
+            '/photos/niazangels - Niyas Mohammed-min.jpg',
         },
         {
           timestamp: '2018/01/17 9:48:55 PM GMT+5:30',
@@ -66,7 +66,57 @@ class App extends Component {
           twitter: 'psbots',
           facebook: '',
           photo:
-            '/photos/IMG_20170910_143601 - Praveen Sridhar.jpg',
+            '/photos/IMG_20170910_143601 - Praveen Sridhar-min.jpg',
+        },
+        {
+          timestamp: '2018/02/09 11:15:17 PM GMT+5:30',
+          name: 'Jacob Celestine',
+          email: 'jacobceles@gmail.com',
+          github: 'jacobceles',
+          twitter: '',
+          facebook: 'jacobceles',
+          photo:
+            '/photos/FB_IMG_1518198272231 - Jacob Celestine-min.jpg',
+        },
+        {
+          timestamp: '2018/02/09 11:15:32 PM GMT+5:30',
+          name: 'Fariz Rahman',
+          email: 'farizrahman4u@gmail.com',
+          github: 'farizrahman4u',
+          twitter: 'farizrahman4u',
+          facebook: '',
+          photo:
+            '/photos/FB_IMG_1518198312917 - Fariz Rahman-min.jpg',
+        },
+        {
+          timestamp: '2018/02/09 11:19:44 PM GMT+5:30',
+          name: 'V Mohammed Ibrahim',
+          email: 'ibrahimjkd@gmail.com',
+          github: 'ibrahiminfinite',
+          twitter: 'ibrahiminfinite',
+          facebook: '',
+          photo:
+            '/photos/IMG_20171103_112556 - MOHAMMED IBRAHIM-min.jpg',
+        },
+        {
+          timestamp: '2018/02/09 11:21:41 PM GMT+5:30',
+          name: 'Abhai Kollara Dilip',
+          email: 'abhai.dilip@gmail.com',
+          github: 'abhaikollara',
+          twitter: 'meAbhai',
+          facebook: 'abhaikollara',
+          photo:
+            '/photos/Abhai Kollara Dilip-Passport size photograph - Abhai Kollara-min.JPG',
+        },
+        {
+          timestamp: '2018/02/10 12:14:53 AM GMT+5:30',
+          name: 'Christie J Purackal',
+          email: 'christeejacobs@gmail.com',
+          github: 'true-source',
+          twitter: '@Christyjacob126',
+          facebook: '',
+          photo:
+            '/photos/IMG_20180124_115737_688 - Christie Jacob-min.jpg',
         },
       ],
     }
