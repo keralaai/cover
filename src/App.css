@@ -102,3 +102,26 @@
   padding: 10px;
   border-top: 1px solid;
 }
+
+.swal2-popup,
+.swal2-confirm {
+  border-radius: 0 !important;
+  outline: none !important;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.swal2-confirm {
+  background-color: black !important;
+}
+.swal2-icon {
+  color: black !important;
+  border-color: black !important;
+}
+.swal-banner {
+  padding: 5px;
+  background-color: rgba(189, 189, 189, 0.3);
+  margin: 0 -25px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: 'Reem Kufi', sans-serif;
+}

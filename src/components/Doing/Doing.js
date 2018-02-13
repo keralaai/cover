@@ -10,8 +10,8 @@ class Member extends Component {
         <div className="Doing-detail">
           <div className="Doing-name">{this.props.data.name}</div>
           <div className="Doing-description">{this.props.data.description}</div>
-          <a className="Doing-button" href={this.props.data.link}>
-            <div className="Doing-button-text">{this.props.data.button}{' '}</div>
+          <a className="Doing-button" href={this.props.data.link} target="_blank">
+            <div className="Doing-button-text" onClick={() => this.props.data.onClick()}>{this.props.data.button}{' '}</div>
             <Icon name="caret-right" />
           </a>
         </div>

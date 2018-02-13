@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 
+import swal from 'sweetalert2'
 import Typist from 'react-typist'
 import '../node_modules/react-typist/dist/Typist.css'
 
@@ -19,22 +20,46 @@ class App extends Component {
           name: 'Ask',
           description: `So you want to know the feasibility of a project before you start? Is the data you have good enough?
               Or you have already started and need help? We got you.`,
-          button: 'Ask us',
-          link: 'https://keralaai.in',
+          button: 'Ask',
+          link: 'http://ask.keralaai.in',
+          onClick: () => {},
         },
         {
           name: 'Find Speakers',
           description:
             'Hosting a machine learning conference at your campus? We can help you find speakers.',
-          button: 'Hellooo',
-          link: 'https://keralaai.in',
+          button: 'Hello',
+          onClick: () => {
+            swal({
+              title: 'Find Speaker',
+              type: 'info',
+              html: `
+      So you have an event coming up. Awesome. We will be glad to find you some great speakers.
+      Just email us at the email address below and we will get in touch with you.
+      <div class="swal-banner">hello@keralaai.in</div>
+      `,
+              showCloseButton: true,
+            })
+          },
         },
         {
           name: 'Project Sponsorships',
           description:
             'Think you are on to something? Show us what you are working on. Expert mentorship and funding for the coolest of the coolest.',
           button: '$$$',
-          link: 'https://keralaai.in',
+          onClick: () => {
+            swal({
+              title: 'Project Sponsorship',
+              type: 'info',
+              html: `
+      Woo, I guess you have a cool project that you are working on. Need some help with that?
+      Contact us and show us what you are working on, and you can actually get it funded and get expert mentorship.
+      Get in touch with us at.
+      <div class="swal-banner">hello@keralaai.in</div>
+      `,
+              showCloseButton: true,
+            })
+          },
         },
       ],
       members: [
@@ -45,8 +70,7 @@ class App extends Component {
           github: 'GopikrishnanSasikumar',
           twitter: 'gopidotai',
           facebook: 'Gopikrishnan Sasikumar',
-          photo:
-            '/photos/IMG_20171127_014318_652 - gopi krishnan-min.jpg',
+          photo: '/photos/IMG_20171127_014318_652 - gopi krishnan-min.jpg',
         },
         {
           timestamp: '2018/01/15 6:03:19 PM GMT+5:30',
@@ -55,8 +79,7 @@ class App extends Component {
           github: 'niazangels',
           twitter: 'niazangels',
           facebook: 'niazangels',
-          photo:
-            '/photos/niazangels - Niyas Mohammed-min.jpg',
+          photo: '/photos/niazangels - Niyas Mohammed-min.jpg',
         },
         {
           timestamp: '2018/01/17 9:48:55 PM GMT+5:30',
@@ -65,8 +88,7 @@ class App extends Component {
           github: 'psbots',
           twitter: 'psbots',
           facebook: '',
-          photo:
-            '/photos/IMG_20170910_143601 - Praveen Sridhar-min.jpg',
+          photo: '/photos/IMG_20170910_143601 - Praveen Sridhar-min.jpg',
         },
         {
           timestamp: '2018/02/09 11:15:17 PM GMT+5:30',
@@ -75,8 +97,7 @@ class App extends Component {
           github: 'jacobceles',
           twitter: '',
           facebook: 'jacobceles',
-          photo:
-            '/photos/FB_IMG_1518198272231 - Jacob Celestine-min.jpg',
+          photo: '/photos/FB_IMG_1518198272231 - Jacob Celestine-min.jpg',
         },
         {
           timestamp: '2018/02/09 11:15:32 PM GMT+5:30',
@@ -85,8 +106,7 @@ class App extends Component {
           github: 'farizrahman4u',
           twitter: 'farizrahman4u',
           facebook: '',
-          photo:
-            '/photos/FB_IMG_1518198312917 - Fariz Rahman-min.jpg',
+          photo: '/photos/FB_IMG_1518198312917 - Fariz Rahman-min.jpg',
         },
         {
           timestamp: '2018/02/09 11:19:44 PM GMT+5:30',
@@ -95,8 +115,7 @@ class App extends Component {
           github: 'ibrahiminfinite',
           twitter: 'ibrahiminfinite',
           facebook: '',
-          photo:
-            '/photos/IMG_20171103_112556 - MOHAMMED IBRAHIM-min.jpg',
+          photo: '/photos/IMG_20171103_112556 - MOHAMMED IBRAHIM-min.jpg',
         },
         {
           timestamp: '2018/02/09 11:21:41 PM GMT+5:30',
@@ -105,8 +124,7 @@ class App extends Component {
           github: 'abhaikollara',
           twitter: 'meAbhai',
           facebook: 'abhaikollara',
-          photo:
-            '/photos/Abhai Kollara Dilip-Passport size photograph - Abhai Kollara-min.JPG',
+          photo: '/photos/Abhai Kollara Dilip-Passport size photograph - Abhai Kollara-min.JPG',
         },
         {
           timestamp: '2018/02/10 12:14:53 AM GMT+5:30',
@@ -115,8 +133,7 @@ class App extends Component {
           github: 'true-source',
           twitter: '@Christyjacob126',
           facebook: '',
-          photo:
-            '/photos/IMG_20180124_115737_688 - Christie Jacob-min.jpg',
+          photo: '/photos/IMG_20180124_115737_688 - Christie Jacob-min.jpg',
         },
       ],
     }
@@ -127,6 +144,33 @@ class App extends Component {
   typingDone = () => {
     this.setState({ typing: false }, () => {
       this.setState({ typing: true })
+    })
+  }
+
+  showFindSpeakerMessage() {
+    swal({
+      title: 'Find Speaker',
+      type: 'info',
+      html: `
+      So you have an event coming up. Awesome. We will be glad to find you some great speakers.
+      Just email us at the email address below and we will get in touch with you.
+      <div class="swal-banner">hello@keralaai.in</div>
+      `,
+      showCloseButton: true,
+    })
+  }
+
+  showProjectSponsorshipMessage() {
+    swal({
+      title: 'Project Sponsorship',
+      type: 'info',
+      html: `
+      Woo, I guess you have a cool project that you are working on. Need some help with that?
+      Contact us and show us what you are working on, and you can actually get it funded and get expert mentorship.
+      Get in touch with us at.
+      <div class="swal-banner">hello@keralaai.in</div>
+      `,
+      showCloseButton: true,
     })
   }
 
